@@ -8,7 +8,7 @@ package textpatternapp;
 public class TextPattern {
 
     private String text;
-    private int Pattern;
+    private int pattern;
     
     public TextPattern() // the default constructor
     {
@@ -25,4 +25,14 @@ public class TextPattern {
         this.text = "AbrAcadAbrA";
         this.text = text;
     }  
+    
+    public String getText()
+    {
+        return(this.text);
+    }
+    
+    public int getPattern()
+    {
+        return this.pattern;
+    }
 }
