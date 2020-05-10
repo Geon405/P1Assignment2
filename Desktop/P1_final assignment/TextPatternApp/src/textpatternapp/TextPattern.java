@@ -35,4 +35,14 @@ public class TextPattern {
     {
         return this.pattern;
     }
+    
+    public void setText(String text)
+    {
+        this.text = text;
+    }
+    
+    public void setPattern(int pattern)
+    {
+        this.pattern = pattern;
+    }
 }
