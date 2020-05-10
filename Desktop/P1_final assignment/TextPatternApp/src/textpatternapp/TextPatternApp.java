@@ -31,6 +31,46 @@ public class TextPatternApp {
             int choice = kb.nextInt();
             kb.nextLine(); // extract the newline character (\n)
             // only if kb.nextLine() is to be used next
-        }
+        
+        switch (choice) {
+            case 1:
+                text_pattern.setPattern(1);
+                System.out.println(text_pattern);
+                break;
+            case 2:
+                text_pattern.setPattern(2);
+                System.out.println(text_pattern);
+                break;
+            case 3:
+                text_pattern.setPattern(3);
+                System.out.println(text_pattern);
+                break;
+            case 4:
+                text_pattern.setPattern(4);
+                System.out.println(text_pattern);
+                break;
+            case 5:
+                text_pattern.setPattern(5);
+                System.out.println(text_pattern);
+                break;
+            case 6:
+                text_pattern.setPattern(6);
+                System.out.println(text_pattern);
+                break;
+            case 7:                
+                System.out.print("Enter a string of characters: ");
+            //  Scanner keyboard = new Scanner(System.in);
+                String inputString = kb.nextLine();
+                text_pattern.setText(inputString);
+            // TextPattern newTp = new TextPattern(inputString);
+            // text_pattern = newTp;
+                System.out.println("Text Reset");
+                break;                           
+                
+            default:
+                    System.out.println("Wrong choice");
+                    break;
+            }
+        } // end while
     }
 }
