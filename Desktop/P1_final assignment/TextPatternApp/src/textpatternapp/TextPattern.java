@@ -80,4 +80,23 @@ public class TextPattern {
         }
         return result;
     }
+    
+    public String toStringPattern3()
+    {
+        int length = this.text.length();
+	String result = "";
+	for(int row = 1; row <= length; row++)
+	{
+        for (int space = 1; space <= length-row; space++)
+	{
+            result += " ";
+	}
+        for (int position = 0; position < row; position++)
+	{
+            result += this.text.charAt(position);
+        }
+            result += "\n";
+	}
+        return result;
+    }
 }
