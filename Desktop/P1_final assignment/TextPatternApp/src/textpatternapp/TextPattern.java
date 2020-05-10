@@ -14,4 +14,8 @@ public class TextPattern {
     {
         this.text = "AbrAcadAbrA";
     }
+    
+    public TextPattern (String text) {
+        this.text = text;
+    }
 }
