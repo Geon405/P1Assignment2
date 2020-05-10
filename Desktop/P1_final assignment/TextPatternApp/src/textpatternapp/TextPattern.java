@@ -99,4 +99,18 @@ public class TextPattern {
 	}
         return result;
     }
+    
+    public String toStringPattern4() {
+    int length = this.text.length();
+    String result = "";
+    for(int row = 0; row < length; row++)
+    {
+    for (int position = row; position < length; position++)
+    {
+	result += this.text.charAt(position);
+    }
+        result += "\n";
+    }
+    return result;
+    }
 }
