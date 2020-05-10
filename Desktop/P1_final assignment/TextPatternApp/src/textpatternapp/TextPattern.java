@@ -131,4 +131,27 @@ public class TextPattern {
     }
         return result;
     }
+    
+    @Override
+    public String toString()
+    {
+        String result = "";
+    //  result += String.format(text, pattern);
+        switch(this.pattern)
+        {
+            case 1:
+                System.out.println(this.toStringPattern1());
+                break;
+            case 2:
+                System.out.println(this.toStringPattern2());
+                break;
+            case 3:
+                System.out.println(this.toStringPattern3());
+                break;
+            case 4:
+                System.out.println(this.toStringPattern4());
+                break;            
+        }
+        return result;
+    }
 }
