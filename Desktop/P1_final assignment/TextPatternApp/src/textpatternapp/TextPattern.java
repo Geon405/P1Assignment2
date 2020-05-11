@@ -169,6 +169,9 @@ public class TextPattern {
             case 5:
                 System.out.println(this.toStringPattern5());
                 break;
+            case 6: 
+                System.out.println(this.toStringPattern6());
+                break;
         }
         return result;
     }
