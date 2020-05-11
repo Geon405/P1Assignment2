@@ -135,13 +135,20 @@ public class TextPattern {
     public String toStringPattern6() {
         int length = this.text.length();
         String result = "";
-        for (int i = 0; i < length; i++) {
-            for (int j = 0; j < length - i; j++) {
-                result += " ";
+        for (int row = 1; row <= length; row++)
+        {
+            for (int position = 0; position < row; position++)
+            {
+                result += this.text.charAt(position);
             }
-            for (int k = 0; k <= i; k++) {
-                result += this.text.charAt(k);
-            }
+            result += "\n";
+        }
+        for(int row = 0; row < length; row++)
+        {
+        for (int position = row; position < length; position++)
+        {
+            result += this.text.charAt(position);
+        }
             result += "\n";
         }
         return result;
