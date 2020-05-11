@@ -101,17 +101,17 @@ public class TextPattern {
     }
     
     public String toStringPattern4() {
-    int length = this.text.length();
-    String result = "";
-    for(int row = 0; row < length; row++)
-    {
-    for (int position = row; position < length; position++)
-    {
-	result += this.text.charAt(position);
-    }
-        result += "\n";
-    }
-    return result;
+        int length = this.text.length();
+        String result = "";
+        for(int row = 0; row < length; row++)
+        {
+        for (int position = row; position < length; position++)
+        {
+            result += this.text.charAt(position);
+        }
+            result += "\n";
+        }
+        return result;
     }
     
     public String toStringPattern5() {  
@@ -129,6 +129,21 @@ public class TextPattern {
     }
         result += "\n";
     }
+        return result;
+    }
+    
+    public String toStringPattern6() {
+        int length = this.text.length();
+        String result = "";
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length - i; j++) {
+                result += " ";
+            }
+            for (int k = 0; k <= i; k++) {
+                result += this.text.charAt(k);
+            }
+            result += "\n";
+        }
         return result;
     }
     
@@ -150,8 +165,15 @@ public class TextPattern {
                 break;
             case 4:
                 System.out.println(this.toStringPattern4());
-                break;            
+                break;
+            case 5:
+                System.out.println(this.toStringPattern5());
+                break;
         }
         return result;
+    }
+    
+    private boolean toStringPattern() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
