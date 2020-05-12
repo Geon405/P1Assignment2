@@ -63,11 +63,11 @@ public class TextPattern {
     
     public String toStringPattern2()
     {
-	int length = this.text.length();
-	String result = "";
+        int length = this.text.length();
+        String result = "";
 	for(int row = 0; row < length; row++)
 	{
-            for (int space = 1; space <= row; space++)
+            for (int space = 1; space < row; space++)
             {
 		result += " ";
             }
@@ -75,9 +75,8 @@ public class TextPattern {
 	    {
                 result += this.text.charAt(position);
 	    }
-	    //length--;
 	    result += "\n ";
-        }
+            }
         return result;
     }
     
