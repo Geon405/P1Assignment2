@@ -2,50 +2,86 @@
 package textpatternapp;
 
 /**
- *
- * @author geonkim
+ * 
+ * The TextPattern program implements an application that 
+ * models an isosceles right triangle pattern of this characters.
+ * 
+ * @author Geon Kim
+ * @since 2020-05-13
  */
 public class TextPattern {
 
     private String text;
     private int pattern;
     
+    /**
+     * Initializes the object's text to given text which is "AbrAcadAbrA".
+     */
     public TextPattern() // the default constructor
     {
         this.text = "AbrAcadAbrA";
     }
     
+    /**
+     * Initializes the object's text to supplied text.
+     * @param text The supplied text.
+     */
     public TextPattern (String text) // an overloaded constructor
     {
         this.text = text;
     }
     
+    /**
+     * Initializes both the object's text and pattern.
+     * @param text The supplied text.
+     * @param pattern The supplied pattern.
+     */
     public TextPattern (String text, int pattern) // an overloaded constructor
     {        
         this.text = "AbrAcadAbrA";
         this.text = text;
     }  
     
+    /**
+     * Returns the text of this TextPattern object.
+     * @return A string representation of this object.
+     */
     public String getText()
     {
         return(this.text);
     }
     
+    /**
+     * Returns the pattern of this TextPattern object.
+     * @return A string representation of this object.
+     */
     public int getPattern()
     {
         return this.pattern;
     }
     
+    /**
+     * Sets the text of this TextPattern object.
+     * @param text The supplied text.
+     */
     public void setText(String text)
     {
         this.text = text;
     }
     
+    /**
+     * Sets the pattern of this TextPattern object.
+     * @param pattern The supplied pattern.
+     */
     public void setPattern(int pattern)
     {
         this.pattern = pattern;
     }
     
+    /**
+     * Returns Pattern1 string representation of this TextPattern object.
+     * @return A string representation of this object.
+     */
     public String toStringPattern1()
     {
         int length = this.text.length();
@@ -61,6 +97,10 @@ public class TextPattern {
         return result;
     }
     
+    /**
+     * Returns Pattern2 string representation of this TextPattern object.
+     * @return A string representation of this object.
+     */
     public String toStringPattern2()
     {
         int length = this.text.length();
@@ -80,6 +120,10 @@ public class TextPattern {
         return result;
     }
     
+    /**
+    * Returns Pattern3 string representation of this TextPattern object.
+     * @return A string representation of this object.
+     */
     public String toStringPattern3()
     {
         int length = this.text.length();
@@ -99,6 +143,10 @@ public class TextPattern {
         return result;
     }
     
+    /**
+     * Returns Pattern4 string representation of this TextPattern object.
+     * @return A string representation of this object.
+     */
     public String toStringPattern4() {
         int length = this.text.length();
         String result = "";
@@ -113,6 +161,10 @@ public class TextPattern {
         return result;
     }
     
+    /**
+     * Returns Pattern5 string representation of this TextPattern object.
+     * @return A string representation of this object.
+     */
     public String toStringPattern5() {  
     int length = this.text.length();
     String result = "";
@@ -143,6 +195,10 @@ public class TextPattern {
         return result;
     }
     
+    /**
+     * Returns Pattern6 string representation of this TextPattern object.
+     * @return A string representation of this object.
+     */
     public String toStringPattern6() {
         int length = this.text.length();
         String result = "";
@@ -165,6 +221,10 @@ public class TextPattern {
         return result;
     }
     
+    /**
+     * Returns string representation of this TextPattern object based on its current pattern and text.
+     * @return A string representation of this object.
+     */
     @Override
     public String toString()
     {
