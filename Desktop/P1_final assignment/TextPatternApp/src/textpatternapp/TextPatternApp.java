@@ -1,14 +1,21 @@
 
 package textpatternapp;
 
-/**
- *
- * @author geonkim
+/*
+ * The TextPattern program implements an application that 
+ * models an isosceles right triangle pattern of this characters.
+ * 
+ * @author Geon Kim
+ * @since 2020-05-13
  */
 import java.util.Scanner;
 
 public class TextPatternApp {
     
+    /**
+     * To prints the output of this program.
+     * @param args
+     */
     public static void main(String[] args){
         Scanner kb = new Scanner (System.in);
         TextPattern text_pattern = new TextPattern();
